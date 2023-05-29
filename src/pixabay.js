@@ -1,6 +1,5 @@
-import { API_PATH, DEFAULT_PIXABAY_PARAMS } from './config';
+import { API_PATH, DEFAULT_PIXABAY_PARAMS } from './config.js';
 import Notiflix from 'notiflix';
-
 
 export default async function pingPixabay({ q = '', page = '1' }) {
   const querystring = new URLSearchParams({
