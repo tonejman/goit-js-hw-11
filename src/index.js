@@ -1,9 +1,13 @@
 ('use strict');
 
-import { searchForPhotos, loadMorePhotos, drawPhotos } from './handlers.js';
+import {
+  searchForPhotos,
+  loadMorePhotos,
+  initializeApplication,
+} from './handlers.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  drawPhotos();
+  initializeApplication();
 });
 
 const searchForm = document.querySelector('#search-form');

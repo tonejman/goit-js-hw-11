@@ -2,7 +2,7 @@ import { loadPhotos } from './ui.js';
 
 let currentPage = '1';
 
-export async function drawPhotos() {
+export async function initializeApplication() {
   const searchForm = document.querySelector('#search-form');
   searchForm.addEventListener('submit', searchForPhotos);
 
