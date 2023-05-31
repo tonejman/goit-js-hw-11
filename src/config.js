@@ -7,4 +7,6 @@ export const DEFAULT_PIXABAY_PARAMS = {
   image_type: 'photo',
   orientation: 'horizontal',
   safesearch: 'true',
+  page: 'pagination',
+  q: 'searchString',
 };
