@@ -1,12 +1,15 @@
 import { loadPhotos } from './ui.js';
 
 let currentPage = '1';
+let startPage = '';
 
-export async function initializeApplication() {
+export async function initializeApplication(e) {
   const searchForm = document.querySelector('#search-form');
   searchForm.addEventListener('submit', searchForPhotos);
-
-  await loadPhotos({ q: '', page });
+  if (startPage.length === 0) {
+    return;
+  }
+  await loadPhotos({ q: '', page: '1' });
 }
 
 export async function searchForPhotos(event) {
