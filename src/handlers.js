@@ -3,7 +3,7 @@ import { loadPhotos } from './ui.js';
 let currentPage = '1';
 let startPage = '';
 
-export async function initializeApplication(e) {
+export async function initializeApplication() {
   const searchForm = document.querySelector('#search-form');
   searchForm.addEventListener('submit', searchForPhotos);
   if (startPage.length === 0) {
